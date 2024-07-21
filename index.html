@@ -18,29 +18,33 @@
 
     <script src='script.js'></script>
 </head>
-<body data-bs-theme="dark">
+<body data-bs-theme="dark"> 
     <div class="weather-app">
         <div class="container-fluid x-1 px-sm-3 py-y mx-auto">
-            <div class="row d-flex justify-content-center">
+            <div class="row justify-content-center">
                 <div class="row card0">
-                    <div class ="card1 col-lg-8 col-md-7">
-                        <h3 class="brand">The Weather</h3>
-                    <div>
-                    <h1 class="tempature large-font mr-3">16&#176;</h1>
-                    <div class="d-flex flex-row px-3 mt-3 mb-3">
-                        <div class="city-time p-2">
-                        <h1 class="name mt-3 mb-0">London</h1>
-                            <small>
-                                <span class="time">06:09</span>
-                                -
-                                <span class="date">Sunday July 14th</span>
-                            </small>
-                         </div>
-                        <div class="weather p-2 align-self-end">
-                            <img src="./icons/day/clear.png" class="icon" alt="icon" width="50" height="50" />
-                            <span class="condition">Clear</span>
+                    <div class ="card1 d-flex flex-column align-items-start col-lg-8 col-md-7">
+                        <h3 class="brand flex-grow-1">The Weather</h3>
+                        <div class="row px-3 mt-3 mb-3">
+                            <div class="col">
+                                <h1 class="tempature large-font mr-3">16&#176;</h1>
+                            </div>
+                            <div class="row">
+                                <div class="col city-time">
+                                    <h1 class="name">London</h1>
+                                        <small>
+                                            <span class="time">06:09</span>
+                                            -
+                                            <span class="date">Sunday July 14th</span>
+                                        </small>
+                                </div>
+                                <div class="weather col p-2 align-self-end">
+                                    <img src="./icons/day/clear.png" class="icon" alt="icon" width="50" height="50" />
+                                    <span class="condition">Clear</span>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+                    <div>
                 </div>
             </div>
             <div class="card2 panel col-lg-4 col-md-5">
@@ -48,23 +52,36 @@
                     <input type="text" class="form-control bg-transparent" name="location" placeholder="Search Location...">
                     <button class="btn btn-light" type="button" id="button-addon2"><span class="material-symbols-outlined">search</span></button>                    
                 </div>
-                <div class="details">
+                <div class="details px-3">
+                    <p class="light-text suggestion">Phoenix, Arizona</p>
+                    <p class="light-text suggestion">Tulsa, Oklahoma</p>
+                    <p class="light-text suggestion">Land O'Lakes, Florida</p>
+                    <p class="light-text suggestion">Northridge, California</p>
+                    <div class="line my-4"></div>
                     <h4>Weather Details</h4>
                     <div class="row px-3">
+                        <p>
                         <div class="col light-text">Coudy</div>
                         <div class="col text-end">12%</div>
+                        </p>
                     </div>
                     <div class="row px-3">
+                        <p>
                         <div class="col light-text">Humidity</div>
                         <div class="col text-end">78%</div>
+                        </p>
                     </div>
                     <div class="row px-3">
+                        <p>
                         <div class="col light-text">Wind</div>
                         <div class="col text-end">1km/h</div>
+                        </p>
                     </div>
                     <div class="row px-3">
+                        <p>
                         <div class="col light-text">Rain</div>
                         <div class="col text-end">0mm</div>
+                        </p>
                     </div>
                     <div class="line mt-3"></div>
                 </div>
