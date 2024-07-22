@@ -3,12 +3,12 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Weather</title>
+    <title>Weather App</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Material Icons CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
@@ -19,11 +19,11 @@
     <script src='script.js'></script>
 </head>
 <body data-bs-theme="dark"> 
-    <div class="weather-app">
-        <div class="container-fluid x-1 px-sm-3 py-y mx-auto">
+    <div>
+        <div class="container-lg x-1 px-sm-3 py-y mx-auto">
             <div class="row justify-content-center">
-                <div class="row card0">
-                    <div class ="card1 d-flex flex-column align-items-start col-lg-8 col-md-7">
+                <div class="weather-app row">
+                    <div class ="main d-flex flex-column align-items-start col-lg-8 col-md-7">
                         <h3 class="brand flex-grow-1">The Weather</h3>
                         <div class="row px-3 mt-3 mb-3">
                             <div class="col">
@@ -35,7 +35,7 @@
                                         <small>
                                             <span class="time">06:09</span>
                                             -
-                                            <span class="date">Sunday July 14th</span>
+                                            <span class="date">Sunday 14th, July 2024</span>
                                         </small>
                                 </div>
                                 <div class="weather col p-2 align-self-end">
@@ -47,7 +47,7 @@
                     <div>
                 </div>
             </div>
-            <div class="card2 panel col-lg-4 col-md-5">
+            <div class="search panel col-lg-4 col-md-5">
                 <div class="input-group mb-3" id="locationInput">
                     <input type="text" class="form-control bg-transparent" name="location" placeholder="Search Location...">
                     <button class="btn btn-light" type="button" id="button-addon2"><span class="material-symbols-outlined">search</span></button>                    
